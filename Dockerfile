@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu:16.04
 
 # Install Python.
 RUN \
@@ -15,6 +15,9 @@ RUN \
 
 # Define working directory.
 WORKDIR /data
+COPY requirements.txt /data/requirements.txt
+RUN pip install -r /data/requirements.txt
 
+COPY test.py /data/test.py
 # Define default command.
-CMD ["bash"]
+CMD ["python","/data/test.py","p g k"]
