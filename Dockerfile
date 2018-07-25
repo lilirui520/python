@@ -20,4 +20,4 @@ RUN pip install -r /data/requirements.txt
 
 COPY test.py /data/test.py
 # Define default command.
-CMD ["python","/data/test.py","p g k"]
+CMD ["python","/data/test.py","p", "g", "k"]
