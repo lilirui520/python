@@ -101,9 +101,8 @@ def main(xtype, group, key):
             print ('offset---------------->', msg.offset)
 
 if __name__ == '__main__':
-    #xtype = sys.argv[1]
-    #group = sys.argv[2]
-    #key = sys.argv[3]
-    #main(xtype, group, key)
-    main('p','g','k')
+    xtype = sys.argv[1]
+    group = sys.argv[2]
+    key = sys.argv[3]
+    main(xtype, group, key)
 
