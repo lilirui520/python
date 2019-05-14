@@ -15,4 +15,4 @@ if __name__ == '__main__':
     app.debug = True
     handler = logging.FileHandler('/tmp/flask.log')
     app.logger.addHandler(handler)
-    app.run()
+    app.run(host='0.0.0.0', port=8080)
