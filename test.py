@@ -13,6 +13,6 @@ def root():
 
 if __name__ == '__main__':
     app.debug = True
-    handler = logging.FileHandler('/tmp/flask.log')
+    handler = logging.FileHandler('/tmp/fluentd.log')
     app.logger.addHandler(handler)
     app.run(host='0.0.0.0', port=8080)
